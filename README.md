@@ -24,6 +24,10 @@ The bot was written in JavaScript! (discord.js)</p>
 <p> <b>cd (folder name)</b> - go in the folder</p>
 <p> <b>npm init</b> - generate configuration file (always press enter)</p>
 <p> <b>npm install discord.js</b> --save - install discord.js package and save it</p>
+<p> <b>npm install --save sequelize</b> - install sequelize package and save it</p>
+<p> <b>npm install --save sqlite3</b> - install sqlite3 package and save it</p>
+<p> <b>npm install --save discord.js-commando</b> - install commando package and save it</p>
+<p> <b>npm install --save eris</b> - install eris package and save it</p>
 <h3>Step 3</h3>
 <p>Copy <b>index.js</b> and <b>config.json</b> file and paste it to <b>(folder name)</b>!</p>
 <h3>Step 4</h3>
