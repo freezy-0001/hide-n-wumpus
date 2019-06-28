@@ -19,14 +19,14 @@ The bot was written in JavaScript! (discord.js)</p>
 <p>Download Node.js https://nodejs.org/en/download/</p>
 <h4>Step 2</h4>
 <p>Open Node.js command prompt</p>
-<p>mkdir (folder name) - make a folder</p>
-<p> cd (folder name) - go in the folder</p>
-<p> npm init - generate configuration file (always press enter)</p>
-<p> npm install discord.js --save - install discord.js package and save it</p>
+<p><b>mkdir (folder name)<b> - make a folder</p>
+<p> <b>cd (folder name)<b> - go in the folder</p>
+<p> <b>npm init<b> - generate configuration file (always press enter)</p>
+<p> <b>npm install discord.js<b> --save - install discord.js package and save it</p>
 <h4>Step 3</h4>
-<p>Copy index.js and config.json file and paste it to <folder name>!</p>
+<p>Copy <b>index.js<b> and <b>config.json<b> file and paste it to <b>(folder name)<b>!</p>
 <h4>Step 4</h4>
-<p>Open config.json and paste your bot token to `"token: "**<here>**"`!</p>
-<h4>Step 4</h4>
-<p>Open Node.js command prompt and type `node index.js`!</p>
+<p>Open <b>config.json<b> and paste your bot token to <b>"token: "(here)"<b>!</p>
+<h4>Step 5</h4>
+<p>Open Node.js command prompt and type <b>node index.js!<b></p>
 <p>Done!</p>
