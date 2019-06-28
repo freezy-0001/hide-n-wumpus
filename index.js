@@ -1,13 +1,186 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const {prefix, token} = require('./config.json');
+var eco = require('discord-economy')
+
 
 tipp = 1;
+
+client.on('message', async message => {
+  if (message.content === '!levels') {
+    const levels =
+    {
+      "embed": {
+        
+        "url": "https://discordapp.com",
+        "color": 8229858,
+        "image": {
+          "url": "https://cdn.discordapp.com/attachments/594143430972538880/594308812341641216/unknown.png"
+        },
+        "author": {
+          "name": "Levels",
+          "url": "https://discordapp.com",
+          "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+        },
+        "fields": [
+         
+        ]
+      }
+    }
+    message.channel.send(levels);
+  }})
+
+
+
+client.on('message', async message => {
+  if (message.content === '!wumpus') {
+ 
+    var output = await eco.FetchBalance(594138707691569163)
+    if (output.balance <= 1000) {
+      const lvl1 =
+      {
+        "embed": {
+          
+          "description": `I am currently Level 1!`,
+          "url": "https://discordapp.com",
+          "color": 8229858,
+          "image": {
+            "url": "https://cdn.discordapp.com/attachments/594143430972538880/594299127970398238/wumpuslvl1.gif"
+          },
+          "author": {
+            "name": "Wumpus Status",
+            "url": "https://discordapp.com",
+            "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+          },
+          "fields": [
+           
+          ]
+        }
+      }
+      message.channel.send(lvl1);
+      if (output.balance >= 1001 && output.balance <= 4999) {
+          const lvl2 =
+          {
+            "embed": {
+              
+              "description": `I am currently Level 2!`,
+              "url": "https://discordapp.com",
+              "color": 8229858,
+              "image": {
+                "url": "https://cdn.discordapp.com/attachments/594143430972538880/594299125646753859/wumpuslvl2.gif"
+              },
+              "author": {
+                "name": "Wumpus Status",
+                "url": "https://discordapp.com",
+                "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+              },
+              "fields": [
+               
+              ]
+            }
+          }
+          message.channel.send(lvl2);
+          if (output.balance >= 5000 && output.balance <= 9999) {
+            const lvl3 =
+            {
+              "embed": {
+                
+                "description": `I am currently Level 3!`,
+                "url": "https://discordapp.com",
+                "color": 8229858,
+                "image": {
+                  "url": "https://cdn.discordapp.com/attachments/594143430972538880/594299125646753859/wumpuslvl3.gif"
+                },
+                "author": {
+                  "name": "Wumpus Status",
+                  "url": "https://discordapp.com",
+                  "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+                },
+                "fields": [
+                 
+                ]
+              }
+            }
+            message.channel.send(lvl3);
+            if (output.balance >= 5000 && output.balance <= 9999) {
+              const lvl4 =
+              {
+                "embed": {
+                  
+                  "description": `I am currently Level 4!`,
+                  "url": "https://discordapp.com",
+                  "color": 8229858,
+                  "image": {
+                    "url": "https://cdn.discordapp.com/attachments/594143430972538880/594299127945494532/wumpuslvl3.gif"
+                  },
+                  "author": {
+                    "name": "Wumpus Status",
+                    "url": "https://discordapp.com",
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+                  },
+                  "fields": [
+                   
+                  ]
+                }
+              }
+              message.channel.send(lvl4);
+              if (output.balance >= 10000 && output.balance <= 29999) {
+                const lvl5 =
+                {
+                  "embed": {
+                    
+                    "description": `I am currently Level 5!`,
+                    "url": "https://discordapp.com",
+                    "color": 8229858,
+                    "image": {
+                      "url": "https://cdn.discordapp.com/attachments/594143430972538880/594300558815395840/wumpuslvl4.gif"
+                    },
+                    "author": {
+                      "name": "Wumpus Status",
+                      "url": "https://discordapp.com",
+                      "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+                    },
+                    "fields": [
+                     
+                    ]
+                  }
+                }
+                message.channel.send(lvl5);
+      }
+    }
+  }}}}})
+
+client.on('message', async message => {
+  if (message.content === '!balance') {
+ 
+    var output = await eco.FetchBalance(594138707691569163)
+    const balance =
+                {
+                  "embed": {
+                    
+                    "description": `Wumpus currently has ${output.balance} 🍪!`,
+                    "url": "https://discordapp.com",
+                    "color": 8229858,
+                    "author": {
+                      "name": "Balance",
+                      "url": "https://discordapp.com",
+                      "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+                    },
+                    "fields": [
+                     
+                    ]
+                  }
+                }
+                message.channel.send(balance);
+  }
+}
+)
 
 client.once('ready', () => {
   console.log('Wumpus is ready to hide!');
   client.user.setActivity("Wumpus is ready to hide!")
 });
+
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -87,13 +260,13 @@ client.on('message', message => {
       },
       "fields": [
         {
-          "name": "Difficult",
-          "value": "Normal",
+          "name": "Hide Places",
+          "value": "6",
           "inline": true
         },
         {
-          "name": "Map",
-          "value": "Lookout Tower",
+          "name": "Difficult",
+          "value": "Normal",
           "inline": true
         }
       ]
@@ -115,13 +288,13 @@ client.on('message', message => {
       },
       "fields": [
         {
-          "name": "Difficult",
-          "value": "Easy",
+          "name": "Hide Places",
+          "value": "5",
           "inline": true
         },
         {
-          "name": "Map",
-          "value": "Lookout Tower",
+          "name": "Difficult",
+          "value": "Easy",
           "inline": true
         }
       ]
@@ -414,6 +587,7 @@ client.on('message', message => {
               }
               message.channel.send(f1)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randommmm == 2) {
@@ -437,6 +611,7 @@ client.on('message', message => {
                 }
                 message.channel.send(f2)
                 tipp = 1;
+                var add = eco.AddToBalance(594138707691569163, 10)
               }
            
             if (randommmm == 3) {
@@ -460,6 +635,7 @@ client.on('message', message => {
               }
               message.channel.send(f3)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randommmm == 4) {
@@ -483,6 +659,7 @@ client.on('message', message => {
               }
               message.channel.send(f4)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommmm == 5) {
               const f5 =
@@ -505,6 +682,7 @@ client.on('message', message => {
               }
               message.channel.send(f5)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommmm == 6) {
               const f6 =
@@ -527,6 +705,7 @@ client.on('message', message => {
               }
               message.channel.send(f6)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommmm == 7) {
               const f7 =
@@ -541,7 +720,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -549,6 +728,7 @@ client.on('message', message => {
               }
               message.channel.send(f7)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommmm == 8) {
               const f8 =
@@ -563,7 +743,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -571,6 +751,7 @@ client.on('message', message => {
               }
               message.channel.send(f8)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
           }
@@ -636,6 +817,7 @@ client.on('message', message => {
               }
               message.channel.send(t1)
               tipp = 1;
+              var add =  eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randommm == 2) {
@@ -659,6 +841,7 @@ client.on('message', message => {
                 }
                 message.channel.send(t2)
                 tipp = 1;
+                var add = eco.AddToBalance(594138707691569163, 10)
               }
            
             if (randommm == 3) {
@@ -682,6 +865,7 @@ client.on('message', message => {
               }
               message.channel.send(t3)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randommm == 4) {
@@ -705,6 +889,7 @@ client.on('message', message => {
               }
               message.channel.send(t4)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommm == 5) {
               const t5 =
@@ -727,6 +912,7 @@ client.on('message', message => {
               }
               message.channel.send(t5)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommm == 6) {
               const t6 =
@@ -741,7 +927,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -749,6 +935,7 @@ client.on('message', message => {
               }
               message.channel.send(t6)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randommm == 7) {
               const t7 =
@@ -763,7 +950,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -771,6 +958,7 @@ client.on('message', message => {
               }
               message.channel.send(t7)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
           } else {
@@ -844,6 +1032,7 @@ client.on('message', message => {
               }
               message.channel.send(two)
               tipp = 1;
+              var add =  eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randomm == 2) {
@@ -867,6 +1056,7 @@ client.on('message', message => {
                 }
                 message.channel.send(twoo)
                 tipp = 1;
+                var add = eco.AddToBalance(594138707691569163, 10)
               }
            
             if (randomm == 3) {
@@ -890,6 +1080,7 @@ client.on('message', message => {
               }
               message.channel.send(twooo)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (randomm == 4) {
@@ -913,6 +1104,7 @@ client.on('message', message => {
               }
               message.channel.send(twoooo)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randomm == 5) {
               const twooooo =
@@ -935,6 +1127,7 @@ client.on('message', message => {
               }
               message.channel.send(twooooo)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             if (randomm == 6) {
               const twoooooo =
@@ -949,7 +1142,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -957,6 +1150,7 @@ client.on('message', message => {
               }
               message.channel.send(twoooooo)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
           } else {
@@ -1066,6 +1260,7 @@ client.on('message', message => {
               }
               message.channel.send(onee)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (random == 2) {
@@ -1089,6 +1284,7 @@ client.on('message', message => {
                 }
                 message.channel.send(oneee)
                 tipp = 1;
+                var add = eco.AddToBalance(594138707691569163, 10)
               }
            
             if (random == 3) {
@@ -1112,6 +1308,7 @@ client.on('message', message => {
               }
               message.channel.send(oneeee)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (random == 4) {
@@ -1127,7 +1324,7 @@ client.on('message', message => {
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
+                    "icon_url": ""
                   },
                   "fields": [
                   ]
@@ -1135,6 +1332,7 @@ client.on('message', message => {
               }
               message.channel.send(oneeeee)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
             if (random == 5) {
@@ -1145,12 +1343,12 @@ client.on('message', message => {
                   "url": "https://discordapp.com",
                   "color": 8229858,
                   "image": {
-                    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+                    "url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
                   },
                   "author": {
                     "name": `${win[i]}`,
                     "url": "https://discordapp.com",
-                    "icon_url": "https://cdn.discordapp.com/attachments/593839052839714817/593893379952345098/ezgif.com-video-to-gif_3.gif"
+                    "icon_url": "https://cdn.discordapp.com/attachments/592827516297674770/592827866916454403/unknown.png"
                   },
                   "fields": [
                   ]
@@ -1158,6 +1356,7 @@ client.on('message', message => {
               }
               message.channel.send(oneeeeee)
               tipp = 1;
+              var add = eco.AddToBalance(594138707691569163, 10)
             }
             
           } else {
@@ -1197,7 +1396,16 @@ client.on('message', message => {
         else if (command === 'giveup' && tipp == 5) { 
           message.channel.send(`I hid here: ${randommmm}!`)
           tipp == 1;
- } else {
+ }else if (command === 'balance') { 
+
+}
+else if (command === 'wumpus') { 
+
+}  
+else if (command === 'levels') { 
+
+}  
+else {
     var unknowncommand = new Array ();
     unknowncommand[0] = "I don't remember this command!";
     unknowncommand[1] = "Rff, bad command!";
