@@ -13,6 +13,7 @@ The bot was written in JavaScript! (discord.js)</p>
 |`!play `| Start play Hide 'n' Seek  |
 |`!maps `| View all maps  |
 |`!tip  `|You can tip, where hide Wumpus  |
+|`!giveup  `|You can give up  |
 |`!credits `| View credits  |
 <h2 align="left">Setup</h2>
 <h3>Step 1</h3>
