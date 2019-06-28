@@ -31,8 +31,8 @@ The bot was written in JavaScript! (discord.js)</p>
 <p>Open <b>Node.js</b> command prompt and type <b>node index.js!</b></p>
 <p>Done!</p>
 <h3 align="left">Authors</h3>
-<h4 align="left">freezy<b>#0001</b></h4>
-<h4 align="left">Vicking<b>#2571</b></h4>
+<p align="left">freezy<b>#0001</b></p>
+<p align="left">Vicking<b>#2571</b></p>
 <h3 align="left">Invite & Test</h3>
-<h4 align="left"><a href="asd">asd</a></h4>
-<h4 align="left">Vicking<b>#2571</b></h4>
+<h4 align="left"><a href="https://discordapp.com/oauth2/authorize?client_id=594138707691569163&scope=bot&permissions=2146958847">Invite Bot</a></h4>
+<h4 align="left"><a href="https://discord.gg/EkRntBj">Join Test Server</a></h4>
