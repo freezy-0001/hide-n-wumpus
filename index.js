@@ -390,7 +390,7 @@ client.on('message', message => {
             win[2] = "You found me!";
             win[3] = "Rff, you found me!";
             win[4] = "You got me!";
-            win[5] = "Unfortunately you didn't found me, just kidding you win!";
+            win[5] = "Unfortunately you didn't find me, just kidding you win!";
             win[6] = "You've got to be peeking while i was hiding, that's not fair.";
             var i = Math.floor(7*Math.random())
             if (randommmm == 1) {
@@ -612,7 +612,7 @@ client.on('message', message => {
             win[2] = "You found me!";
             win[3] = "Rff, you found me!";
             win[4] = "You got me!";
-            win[5] = "Unfortunately you didn't found me, just kidding you win!";
+            win[5] = "Unfortunately you didn't find me, just kidding you win!";
             win[6] = "You've got to be peeking while i was hiding, that's not fair.";
             var i = Math.floor(7*Math.random())
             if (randommm == 1) {
@@ -820,7 +820,7 @@ client.on('message', message => {
             win[2] = "You found me!";
             win[3] = "Rff, you found me!";
             win[4] = "You got me!";
-            win[5] = "Unfortunately you didn't found me, just kidding you win!";
+            win[5] = "Unfortunately you didn't find me, just kidding you win!";
             win[6] = "You've got to be peeking while i was hiding, that's not fair.";
             var i = Math.floor(7*Math.random())
             if (randomm == 1) {
@@ -1042,7 +1042,7 @@ client.on('message', message => {
             win[2] = "You found me!";
             win[3] = "Rff, you found me!";
             win[4] = "You got me!";
-            win[5] = "Unfortunately you didn't found me, just kidding you win!";
+            win[5] = "Unfortunately you didn't find me, just kidding you win!";
             win[6] = "You've got to be peeking while i was hiding, that's not fair.";
             var i = Math.floor(7*Math.random())
             if (random == 1) {
@@ -1182,9 +1182,21 @@ client.on('message', message => {
     message.channel.send("Hey, you are not in game! Use **!play**!")
 
   }
-else if (command === 'giveup' && tipp == 2) { 
-  message.channel.send(`I hid here: ${random}!`)
-  tipp == 1;
+  else if (command === 'giveup' && tipp == 2) { 
+    message.channel.send(`I hid here: ${random}!`)
+    tipp == 1;
+  }
+    else if (command === 'giveup' && tipp == 3) { 
+      message.channel.send(`I hid here: ${randomm}!`)
+      tipp == 1;
+    }
+      else if (command === 'giveup' && tipp == 4) { 
+        message.channel.send(`I hid here: ${randommm}!`)
+        tipp == 1;
+      }
+        else if (command === 'giveup' && tipp == 5) { 
+          message.channel.send(`I hid here: ${randommmm}!`)
+          tipp == 1;
  } else {
     var unknowncommand = new Array ();
     unknowncommand[0] = "I don't remember this command!";
