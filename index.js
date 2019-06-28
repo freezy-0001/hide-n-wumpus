@@ -9,15 +9,6 @@ client.once('ready', () => {
   client.user.setActivity("Wumpus is ready to hide!")
 });
 
-client.on('message', async message => {
-  if (message.content === "test") {
-    lol = 3;
-    lol--;
-    await message.channel.send("asd")
-    
-  }
-})
-
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
