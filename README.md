@@ -18,7 +18,7 @@ The bot was written in JavaScript! (discord.js)</p>
 <h4>Step 1</h4>
 <p>Download Node.js https://nodejs.org/en/download/</p>
 <h4>Step 2</h4>
-<p>Open Node.js command prompt</p>
+<p>Open <b>Node.js</b> command prompt</p>
 <p><b>mkdir (folder name)</b> - make a folder</p>
 <p> <b>cd (folder name)</b> - go in the folder</p>
 <p> <b>npm init</b> - generate configuration file (always press enter)</p>
@@ -28,5 +28,11 @@ The bot was written in JavaScript! (discord.js)</p>
 <h4>Step 4</h4>
 <p>Open <b>config.json</b> and paste your bot token to <b>"token: "(here)"</b>!</p>
 <h4>Step 5</h4>
-<p>Open Node.js command prompt and type <b>node index.js!</b></p>
+<p>Open <b>Node.js</b> command prompt and type <b>node index.js!</b></p>
 <p>Done!</p>
+<h3 align="left">Authors</h3>
+<h4 align="left">freezy<b>#0001</b></h4>
+<h4 align="left">Vicking<b>#2571</b></h4>
+<h3 align="left">Invite & Test</h3>
+<h4 align="left"><a href="asd">asd</a></h4>
+<h4 align="left">Vicking<b>#2571</b></h4>
