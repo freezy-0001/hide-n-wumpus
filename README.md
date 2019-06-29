@@ -26,7 +26,7 @@ The bot was written in JavaScript! (discord.js)</p>
 <p><b>mkdir (folder name)</b> - make a folder</p>
 <p> <b>cd (folder name)</b> - go in the folder</p>
 <p> <b>npm init</b> - generate configuration file (always press enter)</p>
-<p> <b>npm install discord.js</b> --save - install discord.js package and save it</p>
+<p> <b>npm install discord.js --save</b> - install discord.js package and save it</p>
 <p> <b>npm install --save sequelize</b> - install sequelize package and save it</p>
 <p> <b>npm install --save sqlite3</b> - install sqlite3 package and save it</p>
 <p> <b>npm install --save discord.js-commando</b> - install commando package and save it</p>
