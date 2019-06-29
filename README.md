@@ -15,7 +15,7 @@ The bot was written in JavaScript! (discord.js)</p>
 |`!tip  `|You can tip, where did Wumpus hide  |
 |`!giveup  `|You can give up if you're out of guesses  |
 |`!levels  `|View levels  |
-|`!balance  `|View Wumpus's balance  |
+|`!balance  `|View Wumpus's balance (global)  |
 |`!wumpus  `|You can see Wumpus level and how is he look like  |
 |`!credits `| View credits  |
 <h2 align="left">Setup</h2>
