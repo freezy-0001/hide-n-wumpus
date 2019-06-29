@@ -16,7 +16,7 @@ The bot was written in JavaScript! (discord.js)</p>
 |`!giveup  `|You can give up if you're out of guesses  |
 |`!levels  `|View levels  |
 |`!balance  `|View Wumpus balance  |
-|`!balance  `|You can see Wumpus level and how is he look like  |
+|`!wumpus  `|You can see Wumpus level and how is he look like  |
 |`!credits `| View credits  |
 <h2 align="left">Setup</h2>
 <h3>Step 1</h3>
