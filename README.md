@@ -18,6 +18,9 @@ The bot was written in JavaScript! (discord.js)</p>
 |`!balance  `|View Wumpus's balance (global)  |
 |`!wumpus  `|You can see Wumpus level and how is he look like  |
 |`!credits `| View credits  |
+<h2 align="left">Levels</h2>
+<p>You can view all levels of Wumpus and how many cookies you need for the next!</p>
+![](https://cdn.discordapp.com/attachments/594143430972538880/594308812341641216/unknown.png)
 <h2 align="left">Setup</h2>
 <h3>Step 1</h3>
 <p>Download Node.js https://nodejs.org/en/download/</p>
