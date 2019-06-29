@@ -506,6 +506,26 @@ client.on('message', message => {
               {
                 "name": "!credits",
                 "value": "You can see who did this cool bot."
+              },
+              {
+                "name": "!tip",
+                "value": "You can tip, where did Wumpus hide"
+              },
+              {
+                "name": "!giveup",
+                "value": "You can give up if you're out of guesses"
+              },
+              {
+                "name": "!levels",
+                "value": "View levels"
+              },
+              {
+                "name": "!balance",
+                "value": "View Wumpus's balance"
+              },
+              {
+                "name": "!wumpus",
+                "value": "You can see Wumpus level and how is he look like"
               }
             ]
           }
