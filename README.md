@@ -1,6 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/594143430972538880/594145277640966148/unknown.png)
 
 <h1 align="center">Welcome to Hide 'n' Wumpus!</h1>
+https://img.shields.io/badge/authors-freezy%20%26%20Vicking-9cf.svg
 <p>Hide 'n' Wumpus is a Discord entertainment bot for Discord Hackweek 2019! You can play Hide 'n' Seek with Wumpus on different maps!
 The bot was written in JavaScript! (discord.js)</p>
 <h2 align="left">Commands</h2>
