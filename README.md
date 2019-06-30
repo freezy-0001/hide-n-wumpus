@@ -1,3 +1,6 @@
+**!!!IMPORTANT!!!**
+**If you want to see your bot's balance and level: at 38 line edit the userid to your bot's id**
+
 ![](https://cdn.discordapp.com/attachments/594143430972538880/594145277640966148/unknown.png)
 
 <h1 align="center">Welcome to Hide 'n' Wumpus!</h1>
