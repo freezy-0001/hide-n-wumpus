@@ -1,5 +1,5 @@
 **!!!IMPORTANT!!!**
-**If you want to see your bot's balance and level: at 38 line edit the userid to your bot's id**
+**If you want to see your bot's balance and level: at 38, 610, 634, 658, 682, 705, 728, 751, 774, 840, 864, 888, 912, 935, 958, 981, 1055, 1079, 1103, 1127, 1150, 1173, 1283, 1307, 1331, 1355, 1379, line edit the userid to your bot's id**
 
 ![](https://cdn.discordapp.com/attachments/594143430972538880/594145277640966148/unknown.png)
 
