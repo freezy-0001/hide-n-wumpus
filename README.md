@@ -3,7 +3,7 @@
 <h1 align="center">Welcome to Hide 'n' Wumpus!</h1>
 <img src="https://img.shields.io/badge/authors-freezy%20%26%20Vicking-9cf.svg" src="https://img.shields.io/badge/discord.js-11.5.1-9cf.svg">
 <p>Hide 'n' Wumpus is a Discord entertainment bot for Discord Hackweek 2019! You can play Hide 'n' Seek with Wumpus on different maps!
-The bot was written in JavaScript! (discord.js)</p>
+The bot was written in JavaScript! (discord.js) undorito fos bot</p>
 <h2 align="left">Commands</h2>
 
 <p>Here you can see the commands! Few commands are can only use in game! </p>
